@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MoodQueue
 
-## Getting Started
+This is a music playlist generator that uses intelligence to create playlists based on MoodQueue. It does not use genres or artists to make the playlists.
 
-First, run the development server:
+## What MoodQueue does
+
+You can tell MoodQueue how you are feeling in your words. For example "I am feeling nostalgic about summer 2016" or "I need energy for the gym”. And then MoodQueue uses this information to make a playlist. You can save this playlist in your Spotify account.
+
+## Tech used to make MoodQueue
+
+- Next.js 16 and TypeScript are used to make the full stack framework for MoodQueue
+
+- Claude API from Anthropic is used to make the artificial intelligence that generates the playlists for MoodQueue
+
+- Spotify Web API is used to search for tracks and make playlists for MoodQueue
+
+- OAuth 2.0 is used to authenticate with Spotify for MoodQueue
+
+- Tailwind CSS is used to style MoodQueue
+
+## Running MoodQueue
+
+1. Clone the repository for MoodQueue
+
+2. Install the dependencies for MoodQueue
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+npm install
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Make a file called.env.local with your keys for MoodQueue
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ANTHROPIC_API_KEY=...
 
-## Learn More
+SPOTIFY_CLIENT_ID=...
 
-To learn more about Next.js, take a look at the following resources:
+SPOTIFY_CLIENT_SECRET=...
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+SPOTIFY_REDIRECT_URI=http://localhost:3000/api/auth/callback
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
 
-## Deploy on Vercel
+4. Run the development server for MoodQueue
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm run dev
+
+```
+
+5. Open http://localhost:3000 in your web browser to use MoodQueue
+
+## Features of MoodQueue
+
+- You can use language to describe how you are feeling to MoodQueue
+
+- MoodQueue uses artificial intelligence to understand the emotional and cultural context of your words
+
+- MoodQueue can export playlists to your Spotify account
+
+- MoodQueue has a fun retro disco user interface with animated disco balls and neon effects
+
+
+## Deploy MoodQueue
+
+The way to deploy MoodQueue is to use Vercel.
+
+
+MoodQueue is a personal project that was made to learn about artificial intelligence and how to use it with other services.
+
+```
